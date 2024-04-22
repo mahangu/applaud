@@ -27,6 +27,9 @@ class SalesReportsEndpoint(Endpoint):
         SUBSCRIPTION = 'SUBSCRIPTION'
         SUBSCRIPTION_EVENT = 'SUBSCRIPTION_EVENT'
         SUBSCRIBER = 'SUBSCRIBER'
+        SUBSCRIPTION_OFFER_CODE_REDEMPTION = 'SUBSCRIPTION_OFFER_CODE_REDEMPTION'
+        INSTALLS = 'INSTALLS'
+        FIRST_ANNUAL = 'FIRST_ANNUAL'
 
     def filter(self, *, frequency: Union[Frequency, list[Frequency]], report_date: Union[str, list[str]]=None, report_sub_type: Union[ReportSubType, list[ReportSubType]], report_type: Union[ReportType, list[ReportType]], vendor_number: Union[str, list[str]], version: Union[str, list[str]]=None) -> SalesReportsEndpoint:
         '''Attributes, relationships, and IDs by which to filter.
